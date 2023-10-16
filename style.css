@@ -1,0 +1,204 @@
+body{
+    background-image: url(background.jpg);
+    margin:0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:row;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    font-size: 25px;
+}
+
+.font-style{
+    font-family: 'Cherry Cream Soda';
+    font-size: 30px;
+}
+
+.span{
+    color: red;
+}
+
+.image{
+    width: 40px;
+    height: 40px;
+}
+
+.main{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+  width: 100%;
+  display: grid;
+  grid-template-columns:600px 600px 600px ;
+ 
+}
+
+ @media (max-width: 700px){
+  .main{
+    grid-template-columns:400px 400px 400px ;
+    background-color: rgb(222, 73, 170);
+  }
+
+ }
+
+.box{
+    grid-column:2;
+    background-color: white;
+    margin-top: 70px;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    font-family: "Helvetica", arial, sans-serif;
+}
+
+.titel{
+    text-align: center;
+}
+
+.description{
+    font-size: 20px;
+    text-align: center;
+}
+
+hr{
+    width: 107%;
+    margin-left: -15px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.box form {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 20px;
+  }
+
+  @media (max-width: 700px){
+    .box form{
+      grid-template-columns:50px 50px 50px ;
+    }
+  
+   }
+
+  input{
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 20px;
+    border-color: rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+}
+
+@media (max-width: 700px){
+  .box form input{
+    width: 275px;
+  }
+}
+
+label{
+    font-size: 20px;
+    padding: 5px 15px 10px 0px;
+}
+  .firstname {
+    grid-column: 1;
+  }
+  
+  .lastname {
+    grid-column: 1;
+  }
+  
+  .email {
+    grid-column: 1;
+  }
+
+  .password{
+    grid-column: 1;
+  }
+
+  .boxvheck{
+    grid-column: span 4;
+  }
+
+
+  .checkbox input{
+    width: 25px;
+    height: 25px;
+  }
+
+  @media (max-width: 700px){
+    .checkbox input{
+      grid-column: 4;
+      float: bottom;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .small{
+    font-size: small;
+  }
+
+  .big{
+    font-weight: bold;
+  }
+
+  .radio {
+    text-align: center;
+    grid-column: span 4;
+    margin-top: -20px;
+  }
+
+  @media (max-width: 700px){
+    .radio label input{
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+.radio input{
+    width: 30px;
+    height: 30px;
+}
+
+  .center-text{
+    grid-column: span 4;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .button1{
+    grid-column: span 4;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 166);
+    font-size: 15px;
+    padding: 15px 15px 15px 15px;
+	color: white;
+    border-style: none;
+    font-size: 17px;
+    width: 100%;
+    cursor:grab;
+  }
+
+  .button2{
+    grid-column: span 4;
+    border-radius: 5px;
+    border-color: rgb(255, 0, 166);
+    font-size: 15px;
+    padding: 15px 15px 15px 15px;
+	color: rgb(255, 0, 166);
+    width: 100%;
+    cursor:grab;
+  }
+
+  .pink{
+    color: rgb(255, 0, 166);
+}

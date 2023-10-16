@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/30a5af1934.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Ramaraja&family=Roboto:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="top">
+        <img class="image" src="roll202.png">
+        <h1 class="font-style">Roll<span class="span">20</span></h1>
+    </header>
+
+    <main class="main">
+        <div class="box">
+               <div class="box-text">
+                   <h1 class="titel"> Skapa ett konto</h1>
+                   <p class="description">Välkommen till Roll20! Fyll i formuläret nedan för att skapa ditt gratis konto.</p>
+                </div>  
+                <hr>
+            <form action="https://httpbin.org/anything" method="post">
+                <div class="firstname">
+                    <label for="firstname">Förnamn</label>
+                    <input id="firstname" name="firstname" type="text" placeholder="Först"/>
+                </div>
+                <div class="lastname">
+                    <label for="lastname">Efternamn</label>
+                    <input id="lastname" name="lastname" type="text" placeholder="Sista"/>
+                </div>
+                <div class="email">
+                    <label for="email">Emailadress</label>
+                    <input id="email" name="email" placeholder="användare@roll20.net">
+                </div>
+                <div class="password">
+                    <label for="pass">Lösenord</label>
+                    <input id="pass" name="password" type="password" required placeholder="********" />
+                </div>
+                <div class="password">
+                    <label for="pass">Lösenordsbekräftelse</label>
+                    <input id="pass" name="password" type="password" required placeholder="********"/>
+                </div>
+                <div class="boxvheck">
+                    <label class="checkbox" for="checkbox"><input type="checkbox" value="Ja" name="vill ha nyhetsbrev" checked>
+                        Jag vill gå med i <span class="big">Roll20 Nyhetsbrev</span> för att hålla dig uppdaterad om de senaste nyheterna.
+                         Vi skickar dig också några tips för att hjälpa dig att få ut det mesta av dina spel!
+                         <span class="small">(Vi kommer aldrig att sälja din e -post till någon eller skicka dig skräppost, lovar)</span> 
+                    </label>
+                </div>    
+                
+                <p class="center-text">Jag godkänner Roll20 <span class="pink"> Användarvillkor</span></p>
+                <div class="radio">
+                        <label for="pass"></label>
+                        <label for="checked">Ja<input type="radio" value="checked" name="checked"/></label>
+                        <label for="checked">Nej<input type="radio" value="checked" name="checked"/></label>
+                </div>
+          
+                <button class="button1" type="submit">Skapa ett konto</button>
+                <p class="center-text">eller</p>
+                <button class="button2" type="submit"><i class="fa-solid fa-lock"></i> Logga in</button>  
+              </form>
+        </div>
+    </main>
+    
+</body>
+</html>
